@@ -11,13 +11,19 @@ html {
     overflow-y: scroll;
 }
 
+body {
+    height: 100vh;
+}
+
 .container {
-    text-align: center;
-    width: fit-content;
-    padding: 0.2rem 0.4rem 0 0.4rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: rgb(161, 161, 161);
     border-radius: 0.5rem;
-    margin: 10px auto;
+
 }
 
 .title {
@@ -25,28 +31,31 @@ html {
 }
 
 #screen {
-
-
+    margin: 0 12px;
     background-color: #bfcecd;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     color: #000000;
-    font-size: 2.5rem;
+    font-size: 5rem;
     text-align: end;
     padding: 0 1rem;
 
 }
 
 .button-grid {
-
+    margin: 0 12px;
+    height: 100%;
     padding: 1rem;
     background-color: #d9d9d9;
     background-image: linear-gradient(315deg, #afafaf 0%, #f6f2f2 74%);
 
+
     display: grid;
+    justify-content: center;
+    align-items: center;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
-    row-gap: 5px;
-    column-gap: 5px;
+    row-gap: 12px;
+    column-gap: 12px;
     grid-template-areas:
         "ac ce delete percentage"
         "inverse sqrt pow2 divide"
@@ -61,14 +70,14 @@ html {
     display: flex;
     color: rgb(70, 62, 62);
     font-weight: 800;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     background-color: #fee2f8;
     background-image: linear-gradient(315deg, #dfbcd7 0%, #bdf3e2 74%);
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.24);
-    height: 40px;
-    width: 50px;
+    height: 90%;
+    width: 100%;
     padding: 0 1rem;
-    border-radius: 1.3rem;
+    border-radius: 40px;
     justify-content: center;
     align-items: center;
 
@@ -171,7 +180,6 @@ html {
 }
 
 .footer {
-    background-color: rgb(167, 167, 167);
     text-align: center;
     font-size: 0.8rem;
 
