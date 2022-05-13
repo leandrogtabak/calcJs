@@ -1,0 +1,178 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+
+}
+
+html {
+    overflow-y: scroll;
+}
+
+.container {
+    text-align: center;
+    width: fit-content;
+    padding: 0.2rem 0.4rem 0 0.4rem;
+    background-color: rgb(161, 161, 161);
+    border-radius: 0.5rem;
+    margin: 10px auto;
+}
+
+.title {
+    padding-bottom: 0.2rem;
+}
+
+#screen {
+
+
+    background-color: #bfcecd;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    color: #000000;
+    font-size: 2.5rem;
+    text-align: end;
+    padding: 0 1rem;
+
+}
+
+.button-grid {
+
+    padding: 1rem;
+    background-color: #d9d9d9;
+    background-image: linear-gradient(315deg, #afafaf 0%, #f6f2f2 74%);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    row-gap: 5px;
+    column-gap: 5px;
+    grid-template-areas:
+        "ac ce delete percentage"
+        "inverse sqrt pow2 divide"
+        "seven eight nine multiply"
+        "four five six subtract"
+        "one two three add"
+        "zero comma equal posneg";
+
+}
+
+.buttons {
+    display: flex;
+    color: rgb(70, 62, 62);
+    font-weight: 800;
+    font-size: 1.2rem;
+    background-color: #fee2f8;
+    background-image: linear-gradient(315deg, #dfbcd7 0%, #bdf3e2 74%);
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.24);
+    height: 40px;
+    width: 50px;
+    padding: 0 1rem;
+    border-radius: 1.3rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#ac-button {
+    grid-area: ac;
+}
+
+#ce-button {
+    grid-area: ce;
+}
+
+#delete-button {
+    grid-area: delete;
+}
+
+#divide-button {
+    grid-area: divide;
+}
+
+#seven-button {
+    grid-area: seven;
+}
+
+#eight-button {
+    grid-area: eight;
+}
+
+#nine-button {
+    grid-area: nine;
+}
+
+#multiply-button {
+    grid-area: multiply;
+}
+
+#four-button {
+    grid-area: four;
+}
+
+#five-button {
+    grid-area: five;
+}
+
+#six-button {
+    grid-area: six;
+}
+
+#subtract-button {
+    grid-area: subtract;
+}
+
+#one-button {
+    grid-area: one;
+}
+
+#two-button {
+    grid-area: two;
+}
+
+#three-button {
+    grid-area: three;
+}
+
+#add-button {
+    grid-area: add;
+}
+
+#zero-button {
+    grid-area: zero;
+}
+
+#comma-button {
+    grid-area: comma;
+}
+
+#equal-button {
+    grid-area: equal;
+}
+
+#posneg-button {
+    grid-area: posneg;
+}
+
+#sqrt-button {
+    grid-area: sqrt;
+}
+
+#pow2-button {
+    grid-area: pow2;
+}
+
+#inverse-button {
+    grid-area: inverse;
+}
+
+#percentage-button {
+    grid-area: percentage;
+}
+
+.footer {
+    background-color: rgb(167, 167, 167);
+    text-align: center;
+    font-size: 0.8rem;
+
+}
