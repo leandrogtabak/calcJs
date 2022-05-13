@@ -7,18 +7,16 @@
 
 }
 
-body {
+html, body {
     margin: 0;
     padding: 0;
     border: 0;
     height: 100vh;
+    height: var(--app-height, 100vh);
 
 }
 
-html {
-    height: fill-available;
-    height: -webkit-fill-available;
-}
+
 
 .container {
     width: 100%;
