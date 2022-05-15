@@ -44,6 +44,12 @@
       <div class="footer">Developed by Leandro Tabak</div>
     </div>
 
-    <script src="calcJs.js"></script>
+    <script src="calcJs.js">
+            const appHeight = () => {
+        document.documentElement.style.setProperty('--app-height', `${window.innerHeight}px`);
+      };
+      window.addEventListener('resize', appHeight);
+      appHeight();
+    </script>
   </body>
 </html>
